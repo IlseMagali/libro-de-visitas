@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Libro de Visitas</title>
+
+  </head>
+  <body>
+    <h1>Artículos</h1>
+  <section id="listaComentarios">
+    <ol id="listaDeComentarios">
+      <li id="comentariosListados" type="none" style="list-style:none"></li>
+    </ol>
+  </section>
+    <hr id="lineaHorizonte">
+    <h3>Crear comentario</h3>
+    <button onclick="cambiarPuntajeTipografia(1);">Texto grande</button>
+    <button onclick="cambiarPuntajeTipografia(2);">Texto mediano</button>
+    <button onclick="cambiarPuntajeTipografia(3);">Texto chico</button>
+    <button onclick="elegirColorTipografia();">Color de texto</button>
+    <button onclick="elegirColorFondo();">Color de fondo</button>
+    <button onclick="alinearTexto(1)">Alinear izquierda</button>
+    <button onclick="alinearTexto(2)">Alinear centro</button>
+    <button onclick="alinearTexto(3)">Alinear derecha</button> <br>
+    <br>
+    <textarea id="textoEscrito" style="width:75%;" oninput="mostrarTexto();"></textarea>
+    <br>
+    <div id="previewTexto" style="height: 100%; width: 100%;"></div>
+    <br>
+    <br>
+    <button onclick="comentariosAlHistorial();" >Enviar</button>
+  </body>
+  <script src=assets/main.js></script>
+</html>
